@@ -1,0 +1,11 @@
+[
+  {
+    "bindings": {
+      "cmd-ö": "workspace::ToggleBottomDock",
+      "cmd-r": "projects::OpenRecent",
+      "cmd-^": "workspace::ActivateNextWindow",
+      "cmd-shift-d": "editor::SelectAllMatches",
+      "cmd-l": "workspace::ToggleRightDock"
+    }
+  }
+]
