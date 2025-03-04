@@ -4,19 +4,6 @@
   },
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "buffer_font_family": "Geist Mono",
-  "buffer_font_features": {
-    "liga": false
-  },
-  "preferred_line_length": 200,
-  "tab_size": 2,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
-  },
   "languages": {
     "Vue.js": {
       "formatter": {
@@ -46,5 +33,20 @@
         }
       }
     }
+  },
+  "ui_font_size": 18,
+  "buffer_font_size": 18.0,
+  "buffer_line_height": "comfortable",
+  "buffer_font_family": "Geist Mono",
+  "buffer_font_features": {
+    "liga": false
+  },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Github Dark Colorblind"
+  },
+  "terminal": {
+    "option_as_meta": false
   }
 }
