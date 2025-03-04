@@ -1,11 +1,13 @@
 [
   {
     "bindings": {
-      "cmd-ö": "workspace::ToggleBottomDock",
+      "cmd-k": "editor::ToggleComments",
       "cmd-r": "projects::OpenRecent",
       "cmd-^": "workspace::ActivateNextWindow",
       "cmd-shift-d": "editor::SelectAllMatches",
-      "cmd-l": "workspace::ToggleRightDock"
+      "cmd-ö": "workspace::ToggleBottomDock",
+      "cmd-1": "pane::ActivatePrevItem",
+      "cmd-2": "pane::ActivateNextItem"
     }
   }
 ]
