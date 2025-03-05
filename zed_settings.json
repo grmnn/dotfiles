@@ -34,19 +34,21 @@
       }
     }
   },
-  "ui_font_size": 18,
-  "buffer_font_size": 18.0,
+  "ui_font_size": 16,
+  "buffer_font_size": 18,
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Geist Mono",
   "buffer_font_features": {
     "liga": false
   },
+  "tab_size": 2,
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "Github Dark Colorblind"
   },
   "terminal": {
-    "option_as_meta": false
+    "option_as_meta": false,
+    "font_size": 16
   }
 }
