@@ -19,6 +19,21 @@
     "editor.formatOnSave": false,
     "editor.lineHeight": 1.85,
     "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "variable.other.constant",
+                    "variable.other.object",
+                    "support.constant",
+                    "support.variable.object"
+                ],
+                "settings": {
+                    "foreground": "#96a2c0"
+                }
+            },
+        ]
+    },
     "eslint.useFlatConfig": true,
     "eslint.validate": [
         "javascript",
@@ -42,6 +57,9 @@
         "pcss",
         "postcss"
     ],
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
     "git.confirmSync": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": true,
@@ -57,6 +75,7 @@
         "tags": false,
         "worktrees": false
     },
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.fontFamily": "Geist Mono",
     "terminal.integrated.fontSize": 16,
     "workbench.colorTheme": "Cursor Dark Midnight",
