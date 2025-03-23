@@ -12,7 +12,8 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Alias
-alias editz="zed ~/.zshrc"
+alias c="open $1 a \"Cursor\""
+alias editz="code ~/.zshrc"
 alias ls="ls -l1"
 alias dev="cd ~/Developer"
 alias gst="git status"
@@ -39,16 +40,3 @@ plog() {
 	column -t -s '{' |
 	less -XRS --quit-if-one-screen
 }
-
-
-# Tauri Config
-export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
-
-# bun completions
-[ -s "/Users/mario/.bun/_bun" ] && source "/Users/mario/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
