@@ -6,8 +6,11 @@
       "cmd-^": "workspace::ActivateNextWindow",
       "cmd-shift-d": "editor::SelectAllMatches",
       "cmd-ö": "workspace::ToggleBottomDock",
-      "cmd-1": "pane::ActivatePrevItem",
-      "cmd-2": "pane::ActivateNextItem"
+      "cmd-shift-l": "workspace::ToggleRightDock",
+      "cmd-1": "pane::ActivatePreviousItem",
+      "cmd-2": "pane::ActivateNextItem",
+      "cmd-g": "git_panel::ToggleFocus",
+      "cmd-e": "project_panel::ToggleFocus"
     }
   }
 ]
