@@ -1,31 +1,35 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
-
-zstyle ':omz:update' mode reminder  # just remind me to update when it's time
-
-COMPLETION_WAITING_DOTS="true"
-
+ENABLE_CORRECTION="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+PROMPT='%F{cyan}%1~%f $(git_prompt_info)'
 
-# Alias
-alias c="open $1 a \"Cursor\""
-alias editz="code ~/.zshrc"
-alias ls="ls -l1"
-alias dev="cd ~/Developer"
+
+alias ls="ls -1"
+alias editz="zed ~/.zshrc"
+alias editg="zed ~/Library/Application\ Support/com.mitchellh.ghostty/config"
+
+alias ada="cd ~/Developer/ada-web"
+alias cont="cd ~/Developer/ada-container-integration"
+
+alias gpl="git pull"
 alias gst="git status"
 alias gc="git commit"
-alias gco="git checkout"
+alias gco="git switch"
 alias gaa="git add -A"
-alias gd="git diff"
+alias gd="git diff -- . ':(exclude)assets/codegen'"
 alias gdc="git diff --cached"
-alias githow="cat ~/.zshrc | grep 'alias g'"
+alias gcod="git restore . && git switch develop && git pull"
 
-gpa() { git add . && git commit -m "$2" && git push }
-
+gbsc() {
+    local branch_name=$(echo "$1" | sed 's/: */\//' | sed 's/ /-/g' | tr -s '-')
+    echo "Creating branch: $branch_name"
+    git switch -c "$branch_name"
+}
 
 HASH="%C(always,yellow)%h%C(always,reset)"
 RELATIVE_TIME="%C(always,green)%ar%C(always,reset)"
@@ -40,3 +44,7 @@ plog() {
 	column -t -s '{' |
 	less -XRS --quit-if-one-screen
 }
+
+
+#disable auto correct
+unsetopt correct_all
