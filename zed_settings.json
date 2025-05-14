@@ -1,4 +1,13 @@
 {
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "model_parameters": [],
+    "default_profile": "ask",
+    "version": "2"
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -32,23 +41,25 @@
           "source.fixAll.eslint": true
         }
       }
+    },
+    "CSS": {
+      "format_on_save": "off"
     }
   },
   "ui_font_size": 16,
   "buffer_font_size": 18,
-  "buffer_line_height": "comfortable",
+  "buffer_line_height": { "custom": 1.85 },
   "buffer_font_family": "Geist Mono",
+  "buffer_font_weight": 500,
   "buffer_font_features": {
     "liga": false
   },
-  "tab_size": 2,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Github Dark Colorblind"
+    "dark": "One Dark"
   },
   "terminal": {
-    "option_as_meta": false,
-    "font_size": 16
+    "option_as_meta": false
   }
 }
