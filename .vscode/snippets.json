@@ -1,0 +1,15 @@
+{
+	"vbase": {
+		"prefix": "vbase",
+		"description": "basic minimal setup for a Vue SFC",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"$2",
+			"</script>",
+
+			"<template>",
+			"<div>$1</div>",
+			"</template>"
+		]
+	}
+}

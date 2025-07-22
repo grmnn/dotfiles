@@ -2,12 +2,7 @@
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
     },
-    "cursor.cmdk.autoSelect": false,
-    "cursor.cpp.disabledLanguages": [
-        "markdown"
-    ],
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.accessibilitySupport": "off",
+    "cursor.cpp.enablePartialAccepts": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit",
@@ -31,7 +26,7 @@
                 "settings": {
                     "foreground": "#96a2c0"
                 }
-            },
+            }
         ]
     },
     "eslint.useFlatConfig": true,
@@ -60,25 +55,8 @@
     "files.associations": {
         "*.css": "tailwindcss"
     },
-    "git.confirmSync": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": true,
-    "gitlens.views.scm.grouped.views": {
-        "branches": false,
-        "commits": false,
-        "contributors": false,
-        "launchpad": false,
-        "remotes": false,
-        "repositories": false,
-        "searchAndCompare": false,
-        "stashes": false,
-        "tags": false,
-        "worktrees": false
-    },
-    "javascript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.fontFamily": "Geist Mono",
     "terminal.integrated.fontSize": 16,
     "workbench.colorTheme": "Cursor Dark Midnight",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.statusBar.visible": false
+    "workbench.iconTheme": "material-icon-theme"
 }
